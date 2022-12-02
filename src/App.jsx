@@ -64,17 +64,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='title'>Weather App</h1>
+
 
       {
         weather ? (
-          <WeatherCard
-            weather={weather}
-            temperature={temperature}
-            changeUnitTemperature={changeUnitTemperature}
-            isCelsius={isCelsius}
-            newCallAPISearch={newCallAPISearch}
-          />
+          <>
+            <h1 className='title'>Weather App</h1>
+            <WeatherCard
+              weather={weather}
+              temperature={temperature}
+              changeUnitTemperature={changeUnitTemperature}
+              isCelsius={isCelsius}
+              newCallAPISearch={newCallAPISearch}
+            />
+          </>
         ) : <p>
 
           <div class="socket">

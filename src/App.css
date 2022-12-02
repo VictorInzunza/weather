@@ -10,7 +10,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url(Images/back.webp);
+    background-image: url(./assets/Images/back.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
