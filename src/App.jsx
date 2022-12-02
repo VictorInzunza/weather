@@ -64,7 +64,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <h1 className='title'>Weather App</h1>
 
       {
         weather ? (

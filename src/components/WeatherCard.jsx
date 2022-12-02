@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { weatherImages } from '../utils/weatherImages'
 
 const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature, newCallAPISearch }) => {
-    const [place, setPlace] = useState("Search...")
+    const [place, setPlace] = useState("")
     const handleChangePlace = (e) => {
         setPlace(e.target.value)
     }
@@ -16,7 +16,6 @@ const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature, n
     return (
         <article className="weatherCard" style={{ backgroundImage: `url(${getImageFromAPI(weather.weather[0].icon)})` }}>
 
-            <h1 className='title'>Weather App</h1>
             <h3 className='city'>{`${weather.name}, ${weather.sys.country}`}</h3>
             <section className="weatherCard-body">
 
@@ -28,6 +27,7 @@ const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature, n
                 <input
                     type="text"
                     value={place}
+                    placeholder="Search..."
                     onChange={handleChangePlace}
                 //onClick={place()}
                 />

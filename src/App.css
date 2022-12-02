@@ -1,25 +1,25 @@
 body {
     margin: 0%;
 
-
 }
 
 .App {
     align-items: center;
-
-    flex-direction: row;
+    gap: 20px;
+    flex-direction: column;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url(./assets/Images/back.webp);
+    background-image: url(Images/back.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .weatherCard {
+
     min-height: fit-content;
     box-shadow: 7px 7px 31px .02px;
     justify-content: space-around;
@@ -89,8 +89,10 @@ body {
 }
 
 .title {
+    color: #ffffff;
     margin: 0%;
-    font-size: medium;
+    display: block;
+    font-size: xx-large;
     font-weight: 700;
     text-shadow: 2px 2px 1px #26095a;
 }
